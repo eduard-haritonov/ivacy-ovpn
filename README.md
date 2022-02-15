@@ -3,6 +3,8 @@ OpenVPN client for Ivacy VPN for Linux
 
 ## Install
 
+* Order Ivacy VPN [here](https://www.ivacy.com/)
+
 * Download Ivacy OpenVPN archive file from Ivacy VPN [download page](https://support.ivacy.com/vpnusecases/openvpn-files-windows-routers-ios-linux-and-mac/)
 
 ```shell
@@ -21,6 +23,14 @@ cd OpenVPN-Configs
 ```shell
 wget https://github.com/eduard-haritonov/ivacy-ovpn/raw/main/ivacy-ovpn.sh
 chmod +x ivacy-ovpn.sh
+```
+
+* Create the file `auth.txt` containing Ivacy VPN username and password:
+
+```shell
+echo your@mail.box >auth.txt
+echo yourPassword >>auth.txt
+chmod 600 auth.txt
 ```
 
 * Get `sudo` permission to run `openvpn` utility as `root` user
@@ -57,3 +67,9 @@ R -- protocol: random TCP or UDP
 * Use Ctrl+C key to quit from OpenVPN. Choose TCP protocol if UDP is not available for your ISP.
 
 * Have a fun with Ivacy OpenVPN!
+
+## Why I provide this script
+
+I need a VPN to test my application in various countries. After reading a lot of positive reviews on Ivacy VPN, I decided to order and try it.
+
+Android appication and browser addon from Ivacy are simple, fast and convenient for me. But an application for Linux is not found on Ivacy website. So I had to write this small `bash` script for Linux terminal. I hope it can be useful for Linux users.
