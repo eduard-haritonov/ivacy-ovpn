@@ -5,20 +5,20 @@ OpenVPN client for Ivacy VPN for Linux
 
 * Order Ivacy VPN [here](https://www.ivacy.com/)
 
-* Download Ivacy OpenVPN archive file from Ivacy VPN [download page](https://support.ivacy.com/vpnusecases/openvpn-files-windows-routers-ios-linux-and-mac/)
+* Download Ivacy OpenVPN archive file from Ivacy VPN [download page](https://support.ivacy.com/vpnusecases/openvpn-files-windows-routers-ios-linux-and-mac/):
 
 ```shell
 wget https://ivacy.s3.amazonaws.com/support/OpenVPN-Configs.rar
 ```
 
-* Extract the files from `rar` archive
+* Extract the files from `rar` archive:
 
 ```shell
 unrar x https://ivacy.s3.amazonaws.com/support/OpenVPN-Configs.rar
 cd OpenVPN-Configs
 ```
 
-* Download this shell (bash) script
+* Download this shell (bash) script:
 
 ```shell
 wget https://github.com/eduard-haritonov/ivacy-ovpn/raw/main/ivacy-ovpn.sh
@@ -33,12 +33,12 @@ echo yourPassword >>auth.txt
 chmod 600 auth.txt
 ```
 
-* Get `sudo` permission to run `openvpn` utility as `root` user
+* Get `sudo` permission to run `openvpn` utility as `root` user.
 
 
 ## Usage
 
-* Run the script and select a country (enter country number from provided prompt)
+* Run the script and select a country (enter country number from provided prompt):
 
 ```shell
 ./ivacy-ovpn.sh
