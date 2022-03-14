@@ -74,7 +74,7 @@ function country_menu() {
 #
 function country_file() {
 	local PROTO="${2:-*}"
-	find . -maxdepth 1 -mindepth 1 -name "$1"-'*'-"$PROTO"'.ovpn' -printf '%f\n' | \
+	find . -maxdepth 1 -mindepth 1 -name "$1"-'*'"$PROTO"'.ovpn' -printf '%f\n' | \
 		sort -R | \
 		head -n1
 }
